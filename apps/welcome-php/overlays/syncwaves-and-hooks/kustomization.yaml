@@ -10,3 +10,4 @@ resources:
 - job-a.yaml
 - job-b.yaml
 - my-configmap.yaml
+- my-deployment.yaml
