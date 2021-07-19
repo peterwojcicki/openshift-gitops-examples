@@ -4,3 +4,4 @@ namespace: welcome
 resources:
 - ../../base
 - welcome-php-ns.yaml
+- job-a.yaml
