@@ -6,3 +6,4 @@ resources:
 - welcome-php-ns.yaml
 - job-a.yaml
 - job-b.yaml
+- my-configmap.yaml
