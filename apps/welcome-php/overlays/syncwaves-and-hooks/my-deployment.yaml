@@ -1,19 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: alpine-deployment
+  name: busybox-deployment
   labels:
-    app: alpine
+    app: busybox
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: alpine
+      app: busybox
   template:
     metadata:
       labels:
-        app: alpine
+        app: busybox
     spec:
       containers:
-      - name: alpine
-        image: alpine:3.14
+      - name: busybox
+        image: busybox
+        args:
+        - /bin/sh
+        - -c
+        - sleep 3600
