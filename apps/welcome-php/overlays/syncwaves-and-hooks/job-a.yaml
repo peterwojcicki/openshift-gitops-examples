@@ -6,6 +6,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "5"
     version: "1"
 spec:
+  ttlSecondsAfterFinished: 20
   template:
     spec:
       containers:
