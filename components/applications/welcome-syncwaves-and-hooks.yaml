@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: apps/welcome-php/overlays/syncwaves-and-hooks
-    repoURL: https://github.com/redhat-developer-demos/openshift-gitops-examples
+    repoURL: https://github.com/peterwojcicki/openshift-gitops-examples
     targetRevision: main
   syncPolicy:
     automated:
