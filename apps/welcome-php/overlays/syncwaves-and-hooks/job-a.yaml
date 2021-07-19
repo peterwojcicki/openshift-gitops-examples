@@ -4,6 +4,7 @@ metadata:
   name: job-a
   annotations:
     argocd.argoproj.io/sync-wave: "5"
+    version: "1"
 spec:
   template:
     spec:
