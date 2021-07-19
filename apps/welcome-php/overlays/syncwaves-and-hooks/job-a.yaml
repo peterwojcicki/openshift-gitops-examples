@@ -3,7 +3,7 @@ kind: Job
 metadata:
   name: job-a
   annotations:
-  argocd.argoproj.io/sync-wave: "5"
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   template:
     spec:
