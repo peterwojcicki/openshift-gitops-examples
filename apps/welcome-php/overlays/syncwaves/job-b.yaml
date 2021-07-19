@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-b
+  annotations:
+    argocd.argoproj.io/sync-wave: "20"
+spec:
+  template:
+    spec:
+      containers:
+      - name: busybox
+        image: busybox
+        args:
+        - /bin/sh
+        - -c
+        - sleep 60
+      restartPolicy: Never
+  backoffLimit: 4
