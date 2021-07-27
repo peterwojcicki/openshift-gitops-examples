@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: busybox
-        image: busybox:1.33.1
+        image: busybox:1.33
         args:
         - /bin/sh
         - -c
