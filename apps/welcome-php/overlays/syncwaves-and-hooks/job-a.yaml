@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: job-a-1.33.1
+  name: job-a-1.33
   annotations:
     argocd.argoproj.io/sync-wave: "5"
     version: "1"
@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
       - name: busybox
-        image: busybox:1.33.1
+        image: busybox:1.33
         args:
         - /bin/sh
         - -c
