@@ -15,6 +15,6 @@ spec:
         args:
         - /bin/sh
         - -c
-        - sleep 60
+        - sleep 5
       restartPolicy: Never
   backoffLimit: 4
