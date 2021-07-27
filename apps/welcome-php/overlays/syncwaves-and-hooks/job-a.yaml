@@ -1,10 +1,9 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: job-a
+  name: job-a-1.33.1
   annotations:
     argocd.argoproj.io/sync-wave: "5"
-    argocd.argoproj.io/sync-options: "Replace=true"
     version: "1"
 spec:
   template:
