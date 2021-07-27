@@ -4,6 +4,8 @@ metadata:
   name: busybox-deployment
   labels:
     app: busybox
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
 spec:
   replicas: 1
   selector:
