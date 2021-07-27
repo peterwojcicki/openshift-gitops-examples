@@ -3,13 +3,14 @@ kind: Job
 metadata:
   name: job-b
   annotations:
-    argocd.argoproj.io/sync-wave: "20"
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
   template:
     spec:
       containers:
       - name: busybox
-        image: busybox
+        image: busybox:1.33
         args:
         - /bin/sh
         - -c
