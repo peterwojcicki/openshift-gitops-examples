@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: job-a-1.34
+  name: job-a-1.34-v2
   annotations:
     argocd.argoproj.io/sync-wave: "5"
     version: "2"
