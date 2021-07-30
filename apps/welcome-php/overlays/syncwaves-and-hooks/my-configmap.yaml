@@ -3,7 +3,8 @@ kind: ConfigMap
 metadata:
   name: my-configmap
   annotations:
-    argocd.argoproj.io/sync-wave: "-1000"  
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 data:
   game.properties: |
     enemies=aliens
