@@ -7,4 +7,4 @@ metadata:
 data:
   game.properties: |
     enemies=aliens
-    lives=5
+    lives=6
