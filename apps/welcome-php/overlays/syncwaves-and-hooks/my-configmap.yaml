@@ -2,7 +2,9 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: my-configmap
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1000"  
 data:
   game.properties: |
     enemies=aliens
-    lives=4
+    lives=5
