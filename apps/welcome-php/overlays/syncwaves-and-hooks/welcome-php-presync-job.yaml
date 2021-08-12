@@ -1,11 +1,11 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: welcome-presyncjob
+  name: welcome-presyncjob-v2
   annotations:
-    argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
-    #argocd.argoproj.io/sync-wave: "-1000"
+    #argocd.argoproj.io/hook: PreSync
+    #argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+    argocd.argoproj.io/sync-wave: "-1000"
 spec:
   template:
     metadata:
