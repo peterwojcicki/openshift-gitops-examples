@@ -5,7 +5,7 @@ resources:
 - ../../base
 - welcome-php-ns.yaml
 #- welcome-php-postsync-pod.yaml
-#- welcome-php-presync-job.yaml
+- welcome-php-presync-job.yaml
 #- welcome-php-presync-pod.yaml
 - job-a.yaml
 - job-b.yaml
