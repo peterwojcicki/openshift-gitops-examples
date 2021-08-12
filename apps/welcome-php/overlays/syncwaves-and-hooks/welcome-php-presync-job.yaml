@@ -4,7 +4,7 @@ metadata:
   name: welcome-presyncjob
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/sync-wave: "0"
+    #argocd.argoproj.io/sync-wave: "-1000"
 spec:
   template:
     metadata:
