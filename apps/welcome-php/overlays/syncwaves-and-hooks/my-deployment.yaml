@@ -22,4 +22,4 @@ spec:
         args:
         - /bin/sh
         - -c
-        - sleep 3600
+        - sleep 3601
