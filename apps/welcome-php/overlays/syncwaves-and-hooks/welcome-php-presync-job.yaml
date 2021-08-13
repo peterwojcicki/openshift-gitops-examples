@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: welcome-presyncjob-v2
+  name: welcome-presyncjob-v3
   annotations:
     #argocd.argoproj.io/hook: PreSync
     #argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
